@@ -1,0 +1,10 @@
+package com.bootapp.exceptions;
+
+public class ResourceNotFoundException extends Exception {
+	
+	ResourceNotFoundException(String messege)
+	{
+		super(messege);
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.bootapp.exceptions;
+
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus
+public class ResourceNotFoundException extends Exception {
+	
+	ResourceNotFoundException(String messege)
+	{
+		super(messege);
+	}
+
+}

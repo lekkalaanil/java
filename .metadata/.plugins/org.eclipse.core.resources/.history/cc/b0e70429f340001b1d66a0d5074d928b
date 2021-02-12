@@ -1,0 +1,29 @@
+package com.bootapp.model;
+
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+
+
+@Entity
+public class employee {
+	
+	@Id
+	private int eid;
+	
+	@NotBlank(message = "Name is mandatory")
+	private String ename;
+	
+	@Email
+	@NotBlank(message = "email is mandatory")
+	private String email;
+	
+	@NotBlank(message = "password is mandatory")
+	private String password;
+	
+	@Embedded
+	private Address adress;
+
+}

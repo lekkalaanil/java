@@ -1,0 +1,37 @@
+package com.bootapp.exceptions;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Response {
+	
+	private String messege;
+	private String status;
+	
+	
+	
+	public Response() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Response(String messege, String status) {
+		super();
+		this.messege = messege;
+		this.status = status;
+	}
+	public String getMessege() {
+		return messege;
+	}
+	public void setMessege(String messege) {
+		this.messege = messege;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
+	
+
+}

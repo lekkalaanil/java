@@ -1,0 +1,9 @@
+package com.bootapp.service;
+
+public class EmployeeNotFoundException extends Exception {
+	public EmployeeNotFoundException(String messege)
+	{
+		super(messege);
+	}
+
+}

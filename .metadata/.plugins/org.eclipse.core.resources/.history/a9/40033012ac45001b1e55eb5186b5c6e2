@@ -1,0 +1,5 @@
+package com.bootapp.exception;
+
+public class CustomizedResponseEntityExceptionHandler {
+
+}

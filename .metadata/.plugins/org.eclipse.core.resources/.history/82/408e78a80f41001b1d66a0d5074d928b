@@ -1,0 +1,49 @@
+package com.bootapp.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.bootapp.model.Employee;
+import com.bootapp.service.EmployeeService;
+
+@RestController("employee")
+public class EmployeeController {
+	
+	@Autowired
+	EmployeeService service;
+	
+	@PostMapping("/save")
+	public Employee saveEmployee(@RequestBody Employee emp)
+	{
+		return service.saveEmployee(emp);
+	}
+	@PutMapping("/update")
+	public Employee updateEmployee(@RequestBody Employee emp)
+	{
+		return service.updateEmployee(emp);
+	}
+	
+	@GetMapping("/selectAll")
+	public List<Employee> getAllEmployee()
+	{
+		return service.displayAllEmployee();
+	}
+	@GetMapping("/select")
+	public Employee getById(@RequestParam Integer eid)
+	{
+		return service.displayEmployee(eid);
+	}
+	@DeleteMapping("/delete")
+	public void deleteEmployee(@RequestBody Employee emp)
+	{
+		service.deleteEmployee(emp);
+	}
+}

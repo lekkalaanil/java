@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;EmployeeNotFoundException.java&apos; to &apos;bootapp-1/src/main/java/com.bootapp.exception&apos;&#x0D;&#x0A;- Original project: &apos;bootapp-1&apos;&#x0D;&#x0A;- Destination element: &apos;bootapp-1/src/main/java/com.bootapp.exception&apos;&#x0D;&#x0A;- Original element: &apos;com.bootapp.EmployeeNotFoundException.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bootapp.exception" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bootapp{EmployeeNotFoundException.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1608789092875" units="1" version="1.0"/>
+</session>

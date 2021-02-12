@@ -1,0 +1,49 @@
+package com.bootapp.service.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.bootapp.model.Employee;
+
+@Service
+public class EmployeeService implements com.bootapp.service.EmployeeService {
+
+	@Override
+	public ResponseEntity<Object> save(Employee employee) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ResponseEntity<Object> update(Employee employee) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void delete(Employee emp) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public ResponseEntity<?> selectByEid(Integer eid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ResponseEntity<?> SelectAllEmployee() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

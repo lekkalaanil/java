@@ -1,0 +1,10 @@
+package com.bootapp.exceptions;
+
+public class Response {
+	
+	private String messege;
+	private String status;
+	
+	
+
+}

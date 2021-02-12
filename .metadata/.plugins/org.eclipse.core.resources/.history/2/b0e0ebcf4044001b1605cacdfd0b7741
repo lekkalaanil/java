@@ -1,0 +1,17 @@
+package com.bootapp.exceptions;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class ErrorResponse {
+	
+	private String messege;
+	private String status;
+	
+	
+	
+	
+	
+	
+
+}

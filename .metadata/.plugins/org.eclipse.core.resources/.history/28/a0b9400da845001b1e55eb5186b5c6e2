@@ -1,0 +1,68 @@
+package com.bootapp.service.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.bootapp.EmployeeNotFoundException;
+import com.bootapp.exception.EmployeeAlredyExistException;
+import com.bootapp.model.Employee;
+import com.bootapp.repo.EmployeeRepository;
+
+@Service
+public class EmployeeService implements com.bootapp.service.EmployeeService {
+
+	@Autowired
+	EmployeeRepository repository;
+	
+	@Override
+	public ResponseEntity<Object> save(Employee employee) {
+		
+		
+		return new ResponseEntity<Object>(repository.save(employee), HttpStatus.OK);
+	}
+
+	@Override
+	public ResponseEntity<Object> update(Employee employee) {
+		if(repository.existsById(employee.getEid()))
+			throw new EmployeeAlredyExistException("employee with id "+employee.getEid()+" exist");
+		else {
+		return new ResponseEntity<Object>(repository.save(employee), HttpStatus.OK);
+		}
+	}
+
+	@Override
+	public void delete(Employee emp) {
+		if(repository.existsById(emp.getEid()))
+		{
+			repository.delete(emp);
+		}
+		else
+		{
+			throw new EmployeeNotFoundException("employee with id "+emp.getEid()+" not exist");
+		}
+		
+	}
+
+	@Override
+	public ResponseEntity<?> selectByEid(Integer eid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ResponseEntity<?> SelectAllEmployee() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

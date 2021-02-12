@@ -1,0 +1,10 @@
+package com.bootapp.exception;
+
+public class EmployeeAlredyExistException extends RuntimeException {
+	
+	public EmployeeAlredyExistException(String messege)
+	{
+		super(messege);
+	}
+
+}

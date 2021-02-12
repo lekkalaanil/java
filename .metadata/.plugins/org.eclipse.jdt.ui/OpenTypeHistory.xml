@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=bootapp/C:\/Users\/al20161\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.4.2\/spring-data-jpa-2.4.2.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/2.4.2=/=/maven.scope=/compile=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1608269053884"/>
+    <typeInfo handle="=bootapp/E:\/anil\/sts-4.9.0.RELEASE\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507\/jre\/lib\/jrt-fs.jar`java.base=/maven.pomderived=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/15\/docs\/api\/=/&lt;java.lang(Exception.class[Exception" modifiers="33" timestamp="1603755586000"/>
+    <typeInfo handle="=bootapp-1/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.bootapp.repo{EmployeeRepository.java[EmployeeRepository" modifiers="513" timestamp="1608270073803"/>
+    <typeInfo handle="=bootapp-1/E:\/anil\/sts-4.9.0.RELEASE\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507\/jre\/lib\/jrt-fs.jar`java.base=/maven.pomderived=/true=/=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/15\/docs\/api\/=/&lt;java.lang(RuntimeException.class[RuntimeException" modifiers="33" timestamp="1603755586000"/>
+</typeInfoHistroy>

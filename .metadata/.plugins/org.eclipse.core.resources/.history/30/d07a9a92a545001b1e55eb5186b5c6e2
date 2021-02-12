@@ -1,0 +1,12 @@
+package com.bootapp;
+
+public class EmployeeNotFoundException extends RuntimeException {
+
+	private String messege;
+
+	public EmployeeNotFoundException(String messege) {
+		super();
+		this.messege = messege;
+	}
+	
+}
