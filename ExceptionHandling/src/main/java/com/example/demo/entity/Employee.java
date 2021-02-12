@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 
 import lombok.Data;
 
@@ -21,11 +22,12 @@ public class Employee {
 	private String ename;
 	
 	@NotEmpty(message = "email is mandatory")
+	@Size(min = 5,message = "email should contain atleast 5 charecters")
 	private String email;
 	
 	@NotEmpty(message = "password is mandatory")
 	private String password;
-
+	
 	public Long getEid() {
 		return eid;
 	}
